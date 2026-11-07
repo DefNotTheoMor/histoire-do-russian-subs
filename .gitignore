@@ -1,0 +1,12 @@
+# исходники и чужие материалы
+source/
+tools/
+.rumdl_cache/
+
+# рабочий мусор
+changes.txt
+*.patch
+*.zip
+*.ipynb
+*— копия*
+.git/_stale/

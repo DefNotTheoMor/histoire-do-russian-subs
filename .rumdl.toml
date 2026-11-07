@@ -1,0 +1,39 @@
+# Конфиг лежит в репозитории намеренно: он задаёт вид документации,
+# а не настройку конкретной машины. Убрать его из .gitignore.
+
+[global]
+exclude = [
+  "source/**",        # чужие исходники вне версионирования
+  "**/*.ass.md",      # копии субтитров с расширением .md — не Markdown
+  "**/*.srt.md",
+  ".rumdl_cache/**",
+]
+
+[MD013]
+reflow = true
+reflow-mode = "sentence-per-line"
+paragraphs = false
+tables = false
+heading-line-length = 0
+code-block-line-length = 0
+code-spans = false
+abbreviations = ["см", "рис", "табл", "стр", "напр", "др", "т.е", "т.д", "т.п", "гл", "прим"]
+
+[MD029]
+style = "ordered"
+
+[MD035]
+style = "---"
+
+[MD046]
+style = "fenced"
+
+[MD048]
+style = "backtick"
+
+[MD055]
+style = "leading_and_trailing"
+
+[MD044]
+names = ["Aegisub", "MKVToolNix", "mkvmerge", "mkvpropedit", "libass", "VSFilter", "Matroska", "Netflix", "Markdown", "Python"]
+code-blocks = false
